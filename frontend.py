@@ -3,20 +3,22 @@ import streamlit as st
 
 #this needs to map the equations script functions. ANY errors here will screw everything else up
 mappings = {
-    "names":["Velocity 1","Velocity 2","Velocity Vector","Displacement","Kinetic Energy"],
-    "functions":[eq.velocity1,eq.velocity2,eq.velocity_vector,eq.displacement,eq.kinetic_energy],
+    "names":["Velocity 1","Velocity 2","Velocity Vector","Displacement","Kinetic Energy","Potential Energy"],
+    "functions":[eq.velocity1,eq.velocity2,eq.velocity_vector,eq.displacement,eq.kinetic_energy,eq.potential_energy],
     "formulas":[
         r'''v = \left(\frac{d}{t}\right)''',
         r'''v_f = v_i + a*t''',
         r'''v*r^2 = v*i^2 + v*j^2''',
         r'''x = v_i*t + \frac 1 2*a*t^2''',
-        r'''KE = \frac 1 2*m*v^2'''],
+        r'''KE = \frac 1 2*m*v^2''',
+        r'''PE = m*G*h'''],
     "parameters":[
         ("d","t","v"),
         ("vi","a","t","vf"),
         ("i","j","r"),
         ("vi","t","a","x"),
         ("m","v","ke"),
+        ("m","h","pe")
         ]
     }
 
