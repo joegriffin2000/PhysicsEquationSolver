@@ -1,3 +1,7 @@
 # git ignore the virtual environment so i don't store all of the python packages in my repository
 
 .venv/
+uv.lock
+.python-version
+__pycache__/equations.cpython-314.pyc
+pyproject.toml
